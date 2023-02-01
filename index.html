@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Module 2 Final </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Menu -->
+    <div class="menu">
+        <div class="img" id="img1"> </div>
+        <div class="img" id="img2"> </div>
+        <div class="img" id="img3"> </div>
+        <div class="img" id="img4"> </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Form -->
+    <h3 class="hide" id="head3"> Register </h3>
+    <form class="hide" id="form">
+        <div class="inputs">
+            <div class="form-item">
+                <label for="name"> Name: </label>
+                <input class="input" type="text" name="name" id="name-input" value="">
+            </div>
+            <div class="form-item">
+                <label for="name"> Email: </label>
+                <input class="input" type="email" name="email" id="email-input" value="">
+            </div>
+            <div class="form-item">
+                <label for="name"> Username: </label>
+                <input class="input" type="text" name="username" id="uname-input" value="">
+            </div>
+        </div>
+
+        <div id="msg">
+
+        </div>
+
+        <div class="btn">
+            <input type="button" value="Register" id="regbtn" onclick="submitForm()">
+        </div>
+    </form>
+
+    <!-- Displaying Details -->
+    <div class="hide" id="details"> </div>
+
+    <!-- Displaying Dice -->
+    <div class="hide" id="dice">
+        <div id="noOfTries"> Attempts remaining: <span id="tries"> 0 </span> </div>
+        <div id="diceimg">
+            <img src="https://media.tenor.com/IfbgWLbg_88AAAAC/dice.gif" height=300px width=300px alt="dice">
+        </div>
+        <div id="diceclicks"> Dice clicks remaining: <span id="clicks"> 3 </span> </div>
+        <div id="sumOfOutcomes"> The sum of Dice Outcomes is: <span id="sum"> 0 </span> </div>
+        <div id="textmsg"> </div>
+    </div>
+
+    <div class="hide" id="couponCode"> </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
